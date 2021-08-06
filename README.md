@@ -1,6 +1,20 @@
-# bibliopic
+<!--Hello Dear-->
+<div align="center">
+    <h1><em>BIBLIOPIC<em></h1>
+</div>
 
-> A Vue.js project
+> *A Vue.js project*
+
+    v 0.0.0
+
+<div align="center">
+    <img src="./src/screen/screen-v0.png">
+</div>
+
+
+<div align="center">
+    <h1>AUTHOR NOTES</h1>
+</div>
 
 ## Build Setup
 
@@ -14,5 +28,3 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
