@@ -1,12 +1,16 @@
 <template>
 
   <div class="corpo">
-    <h1 class="centralizado" >{{ titulo }}</h1>
+    <h1 class="centralizado">{{ titulo }}</h1>
+
+  
+    <input type="search" class="filtro" placeholder="filtre por titulo">
+  
 
     <ul class="lista-fotos" > 
       <li class="lista-fotos-item" v-for="foto of fotos">
         
-        <meu-painel>
+        <meu-painel :titulo="foto.titulo">
             <img class="imagem-responsiva" :src="foto.url" :alt="foto.titulo">
         </meu-painel>
 
@@ -17,7 +21,14 @@
 </template>
 
 <script>
+
+import Painel from './components/shared/painel/Painel.vue';
+
 export default {
+
+  components: {
+    'meu-painel' : Painel
+  },
 
   data() {
 
@@ -81,6 +92,12 @@ export default {
     margin: 0 0 15px 0;
     padding: 10px;
     text-transform: uppercase;
+  }
+
+  .filtro {
+    display: block;
+    width: 60%;
+    justify-items: flex-end;
   }
 
 </style>
